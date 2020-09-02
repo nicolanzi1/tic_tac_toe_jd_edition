@@ -1,3 +1,5 @@
+const MoveError = require("./moveError");
+
 class Board {
     constructor() {
         this.grid = Board.makeGrid();
@@ -16,7 +18,7 @@ class Board {
             return true;
         }
 
-        for (let rowIdx = 0; rowIdx < 3, rowIdx++) {
+        for (let rowIdx = 0; rowIdx < 3; rowIdx++) {
             for (let colIdx = 0; colIdx < 3; colIdx++) {
                 if (this.isEmptyPos([rowIdx, colIdx])) {
                     return false;
