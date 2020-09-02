@@ -46,7 +46,7 @@ class Board {
                     this.grid[rowIdx][colIdx] ? this.grid[rowIdx][colIdx] : " "
                 );
             }
-            strs.push(`${marks,join('|')}\n`);
+            strs.push(`${marks.join('|')}\n`);
         }
 
         console.log(strs.join('-----\n'));
@@ -107,7 +107,7 @@ class Board {
     static makeGrid() {
         const grid = [];
 
-        for (let i =0; i < 3; i++) {
+        for (let i = 0; i < 3; i++) {
             grid.push([]);
             for (let j = 0; j < 3; j++) {
                 grid[i].push(null);
